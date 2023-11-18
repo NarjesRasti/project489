@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css.css"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700|Roboto:400,700&display=swap" rel="stylesheet">
+<style>
+.aboutt {
+  background-color: #f9f9f9;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+          max-width: 100%;
+}
+.aboutt .custom_heading-container{
+  position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color:var(--black);
+        font-size: 3rem;
+        margin-top: -15rem;
+}
+
+
+.aboutt  .img-box {
+  margin-top: 20rem;
+  margin-bottom:3rem;
+}
+
+.aboutt  .img-box img {
+max-width: 40rem;
+margin:10rem;
+
+}
+
+.aboutt .detail-box p{
+  position: absolute;
+        top:50%;
+        transform: translateX(-35%);
+        text-align: center;
+        color:var(--black);
+        font-size:2rem;
+        margin-top: 28rem;
+line-height:29px ;
+
+
+}
+
+.aboutt  .detail-box a {
+  display: inline-block;
+  padding: 10px 45px;
+  margin-top: 17rem;
+  font-size: 1.7rem;
+border-radius:.5rem ;
+border:.2rem solid var(--black);
+color:var(--black) ;
+}
+
+.aboutt  .detail-box a:hover {
+  background: var(--green);
+color:#fff; ;
+}
+.footercontainer{
+max-width:100% ;
+padding: 2rem 0.5rem 0.1rem;
+background-color: black;
+opacity: 0.9;
+}
+.footerNav{margin:0.5rem}
+.footerNav ul{display:flex; }
+.footerNav ul li a{color:white; margin:0.3rem; text-decoration: none; font-size: 2rem;opacity: 0.7;transition: 0.5s;}
+.footerNav ul li p{color:white; margin:0.3rem; text-decoration: none; font-size: 2rem;opacity: 0.7;transition: 0.5s;}
+.footerNav ul li a:hover{opacity: 1;} 
+ .footerbottom{background-color: black; padding: 0.1rem; text-align:right; font-size: 1.5rem;}
+ .footerbottom p{color: #fff;}
+
+</style>
+
+
+
+</head>
+<body>
+    <header class="header">
+
+<a href="#" class="logo"><i class="fa fa-prescription-bottle-medical"></i>  NTF pharmacy</a>
+
+<nav class="tonav">
+  <a href="home.html">HOME</a>
+  <a  href="#"> DASHBOARD </a>
+  <a  href="#medicine"> PRODUCTS</a>
+  <a  href="#onlinebuy"> REPORTS </a>
+  <a  href="#">SETTINGS</a>
+</nav>
+<div class="icons">
+<div class="fas fa-bars" id="bars-btn"></div>
+<div class="fas fa-search" id="search-btn"></div>
+<div class="fas fa-shopping-cart" id="shopping-cart"></div>
+<div class="fas fa-user" id="user"></div>
+</div>
+<form action="" class="search-form">
+<input type="search" id="search-box" placeholder="search here ....">
+<label for="search-box" class="fas fa-search"></label>
+</form>
+
+<form action="Post" class="login-form" action="verify.php">
+    <h3>Login</h3>
+     <input type="text" name="username" class="box"  placeholder="your name">
+     <input type="password" name="password" class="box" placeholder="your password" required>
+     <input type="email" name="Email" class="box" placeholder="your Email" required><br><br>
+    <input type="submit" name="sb" value="Login" class="btn">
+    <p><input type="checkbox" checked="checked" name="remember"> Remember me <span class="psw"></p>
+      <p>Forgot <a href="#">password?</a></span><p>
+    <p>don't have an account? <a href="register.php">register now!</a></p>
+</form>
+
+
+    </header>
+    <div class="aboutt">
+        <div class="custom_heading-container ">
+          <h2>
+            ABOUT US
+          </h2>
+        </div>
+  
+        <div class="img-box">
+          <img src="images/about-medicine.png" alt="">
+        </div>
+        <div class="detail-box">
+          <p>
+            At NTF Pharmacy, we are dedicated to providing exceptional healthcare services.
+             With years of experience, we have become a trusted name in the industry. 
+             Our team of professionals is committed to delivering high-quality care and ensuring customer satisfaction. 
+             Specializing in pharmacy management systems, we streamline operations to provide efficient services. 
+             Recognized for our commitment to excellence, we value our customers' trust and strive to maintain 
+             strong relationships through personalized care.
+             Choose NTF Pharmacy for reliable and outstanding healthcare solutions.
+          </p>
+          <div class="d-flex justify-content-center">
+            <a href="About.html">
+              Read More
+            </a><br><br>
+        </div>
+        </div>
+      </div>
+    
+      <footer>
+        <div class="footercontainer">
+        <div class="footerNav">
+          <ul>
+        <li><a href="#">Contect Us</a></li>
+       
+         </ul>
+         <ul>
+          <li> <p>+973 18832919</p></li>
+      </ul><ul><li> <p>NTFpharmacy@gmail.com</p></li></ul>
+        </div>
+        <div class="footerbottom">
+        <p> All rights for 2023</p></div></footer>
+        
+
+
+
+
+
+  <script src="script.js"></script>  
+</body>
+</html>

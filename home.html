@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css.css"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+        background-size: cover;
+        padding-top: 11rem;
+        padding-bottom: 81rem;
+        max-width: 100%;
+        background-image: linear-gradient(rgba(0,0,0,.40), rgba(0,0,0,.40)), url(images/the-tonik-5Lbyao5bzbc-unsplash.jpg);
+        }
+        .content h1{
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color:#fff;
+        font-size: 70px;
+        margin-top: 80px;
+        }  
+        .content p{
+          position: absolute;
+        top:50%;
+        transform: translateY(-30%);
+        text-align: center;
+        color:#fff;
+        margin-top: 25rem;
+        font-size:2rem;
+line-height:29px ;
+        }  
+        .content .btn{
+margin-top: 15rem;
+display: inline-block;
+padding: .8rem 3rem;
+font-size: 1.7rem;
+border-radius:.5rem ;
+border:.2rem solid var(--black);
+color:var(--black) ;
+cursor: pointer;
+background: none;
+transform: translateY(950%);
+
+
+}  
+.content .btn:hover{background: var(--green);
+color:#fff;} 
+span.psw {
+  float: right;
+  padding-top: 16px;}
+.footercontainer{
+width:100% ;
+padding: 2rem 0.5rem 0.1rem;
+background-color: black;
+opacity: 0.9;
+}
+.footerNav{margin:0.5rem}
+.footerNav ul{display:flex;justify-content:center ;}
+.footerNav ul li a{color:white; margin:0.5rem; text-decoration: none; font-size: 2rem;opacity: 0.7;transition: 0.5s;}
+.footerNav ul li a:hover{opacity: 1;} 
+ .footerbottom {background-color: black; padding: 0.5rem; text-align:center; font-size: 1.5rem;}
+ .footerbottom p{color: #fff;}
+</style>
+
+
+
+</head>
+<body>
+    <header class="header">
+
+<a href="#" class="logo"><i class="fa fa-prescription-bottle-medical"></i>  NTF pharmacy</a>
+
+<nav class="tonav">
+<a href="home.html">HOME</a>
+<a  href="#"> DASHBOARD </a>
+<a  href="#medicine"> PRODUCTS</a>
+<a  href="#onlinebuy"> REPORTS </a>
+<a  href="#">SETTINGS</a>
+</nav>
+<div class="icons">
+<div class="fas fa-bars" id="bars-btn"></div>
+<div class="fas fa-search" id="search-btn"></div>
+<div class="fas fa-shopping-cart" id="shopping-cart"></div>
+<div class="fas fa-user" id="user"></div>
+</div>
+<form action="" class="search-form">
+<input type="search" id="search-box" placeholder="search here ....">
+<label for="search-box" class="fas fa-search"></label>
+</form>
+
+<form action="Post" class="login-form" action="verify.php">
+    <h3>Login</h3>
+     <input type="text" name="username" class="box"  placeholder="your name">
+     <input type="password" name="password" class="box" placeholder="your password" required>
+     <input type="email" name="Email" class="box" placeholder="your Email" required><br><br>
+    <input type="submit" name="sb" value="Login" class="btn"><br><br>
+    <p><input type="checkbox" checked="checked" name="remember"> Remember me <span class="psw"></p>
+     <p>Forgot <a href="#">password?</a></span><p>
+<p>don't have an account? <a href="register.php">register now!</a></p>
+    
+</form>
+
+
+    </header>
+
+    <div class="content">
+    <h1>
+                          Welcome To Our <br>
+                          <span>
+                           Pharmacy
+                          </span>
+    
+                        </h1>
+                        <p>
+                        Make your next visit to our pharmacy from virtually anywhere. The NTF Pharmacy makes it easier for you and 
+                        <br>your family to order, monitor, and receive prescriptions when and where it is convenient for you. 
+
+
+                        </p>
+                        <a href="#" class="btn">
+                            Buy Now
+                          </a>
+                        
+                          
+    
+    
+    
+    </div>
+<footer>
+<div class="footercontainer">
+<div class="footerNav">
+  <ul>
+<li><a href="About.html">About Us</a></li>
+<li><a href="contactus.html">Contect Us</a></li>
+ </ul>
+</div>
+<div class="footerbottom">
+<p> All rights for 2023</p>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+  </footer>  
+  <script src="script.js"></script>  
+</body>
+</html>

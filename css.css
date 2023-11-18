@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+:root{
+--green:rgb(82, 110, 82);
+--black:black;
+--light-color:#666;
+--box-shadow:0 .5rem 1rem rgb(113, 107, 107);
+--border:2rem solid rgb(100, 94, 94);
+--outline:1rem solid rgb(107, 102, 102);
+--outline-hover:2rem solid var(--black);
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+box-sizing: border-box;
+outline:none; border: none;
+text-transform: capitalize;
+text-decoration: none; transition: all .2s linear;
+}
+html{
+font-size: 62.5%;
+overflow-x: hidden;
+scroll-behavior: smooth;
+scroll-padding-top: 7rem;
+}
+body{
+background-color: #eee;
+}
+
+.btn{
+margin-top: 1rem;
+display: inline-block;
+padding: .8rem 3rem;
+font-size: 1.7rem;
+border-radius:.5rem ;
+border:.2rem solid var(--black);
+color:var(--black) ;
+cursor: pointer;
+background: none;
+}
+.btn:hover{
+background: var(--green);
+color:#fff;
+
+
+
+
+}
+
+.header{
+position: fixed;
+top:0; left:0; right: 0;
+z-index: 1000;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 2rem 9%;
+background:#fff;
+box-shadow: var(--box-shadow);}
+.header .logo{
+font-size: 2.5rem;
+font-weight: bolder;
+color:var(--black);
+}
+.header .logo i{
+    color:var(--green);
+
+
+}
+.header .tonav a{
+font-size: 1.7rem;
+margin: 0 1rem;
+color:var(--black);
+}
+.header .tonav a:hover{
+
+color:var(--green);
+}
+.header .icons div{
+height: 4.5rem; width: 4.5rem;
+line-height: 4.5rem; border-radius: 4.5rem;
+background: #eee; color:var(--black);
+font-size: 2rem; margin-left: 3rem; text-align: center;cursor: pointer;}
+.header .icons div:hover{
+    background: var(--green); color:#fff;
+}
+#bars-btn{display: none;}
+.header .search-form{
+position: absolute; top:110%; right:-110%;
+width: 50rem; height:5rem; background: #fff;
+border-radius: .5rem; overflow: hidden; display: flex;
+align-items: center; box-shadow: var(--box-shadow);}
+.header .search-form.active{
+right:2rem;
+transition: .1s linear;
+}
+.header .search-form input{
+height: 100%; width: 100%; background: none;
+text-transform: none; font-size: 1.6rem; color:var(--black);
+padding:0  1.5rem;}
+.header .search-form label{
+font-size: 2.2rem;padding-right: 1.5rem; color:var(--black);
+cursor: pointer;
+}
+.header .search-form label:hover{color: var(--green);}
+.header .login-form{
+    position: absolute; top:110%; right:-110%;
+    width: 30rem;  background: #fff;
+    border-radius: .5rem; padding: 2rem;
+    text-align: center; box-shadow: var(--box-shadow);}
+    
+    .header .login-form h3{ font-size: 2.5rem; text-transform:uppercase; color:var(--black)       }
+    .header .login-form .box{
+   width: 90%;
+   margin: .7rem 0;
+   background: #eee;
+   border-radius: .5rem;
+   padding:1rem;
+   font-size: 1.6rem;
+   color: var(--black);
+   text-transform: none;
+   
+       }
+       .header .login-form.active{right: 2rem; transition: .1s linear;}
+       .header .login-form .btn {
+        width: 50%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 5px 5px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 5%;
+        cursor: pointer;
+      }
+      .header .login-form .btn:hover {
+        background-color: #45a049;
+      }
+    .header .login-form p{
+   font-size: 1.4rem;
+   padding:.5rem 0;
+   color:var(--light-color);
+   }
+   .header .login-form p a{
+       color:var(--green);
+       text-decoration: underline;
+   
+   }
+    
+   
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   @media(max-width:991px){
+html{
+
+    font-size: 55%;
+}
+.header{
+
+    padding: 2rem;
+}
+
+
+
+   }
+   @media (max-width:768px){
+    #bars-btn{display: inline-block;}
+.header .search-form{
+width: 90%;
+}
+.header .tonav{
+        position: absolute; top:110%; right:-110%;
+        width: 30rem;  background: #fff;
+        border-radius: .5rem;  
+         box-shadow: var(--box-shadow);
+       
+    }
+    
+
+    .header .tonav.active{
+        right:2rem;
+        transition: .1s linear;
+
+
+
+    }
+    .header .tonav a{
+        font-size:2rem;
+        margin: 2rem 2.5rem;
+        display: block;}
+    
+    
+    
+       }
+       @media(max-width:450px){
+        html{
+        
+            font-size: 50%;
+        }}
